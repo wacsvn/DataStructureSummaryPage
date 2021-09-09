@@ -1,0 +1,61 @@
+body{
+  line-height: 1.5;
+  background-color: #fafffb;
+  font-family: helvetica;
+  font-size: 0.95rem;
+}
+header{
+  margin: 20px;
+  text-align: justified;
+  font-size: 1.1rem;
+}
+#navbar{
+  position: fixed;
+  tio: 0px;
+  left: 0px;
+  border-right: solid;
+  border-color: teal;
+  text-color: teal;
+}
+#navbar li{
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+#navbar a{
+  display: block;
+  padding: 10px 10px;
+  color: teal;
+  style: strong;
+}
+#main-doc{
+  position: absolute;
+  margin-left: 300px;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 20rem;
+  padding-top: 10px;
+}
+@media only screen and (max-width: 950px) {
+  #navbar ul {
+    border: 1px;
+    height: 200px;
+  }
+    #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 305px;
+    border: none;
+    z-index: 1;
+    solid;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 360px;
+    padding: 0;
+  }
+}
