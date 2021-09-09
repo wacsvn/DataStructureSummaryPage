@@ -1,0 +1,102 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<nav id="navbar">
+  <header><strong>Data Structure Documentation</strong></header>
+  <ul>
+    <li><a class="nav-link" href="#home">Home</a></li>
+    <li>
+      <a class="nav-link" href="#arrays"
+        >Arrays</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#arraylists">ArrayLists</a>
+    </li>
+    <li><a class="nav-link" href="#linked-lists">Linked Lists</a></li>
+    <li><a class="nav-link" href="#queues">Queues</a></li>
+    <li>
+      <a class="nav-link" href="#stacks">Stacks</a>
+    </li>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="home">
+    <header>
+      <h1>Home</h1>
+      </header>
+      <p>
+        Welcome to the homescreen of our technical documentation page! Here you can scroll or use the navigation bar to skip to sections that explain various data structures in Java. 
+      </p>
+  </section>
+  
+  <section class="main-section" id="arrays">
+    <header>
+      <h1>Arrays</h1>
+    </header>
+    <p>
+        Java programming language provides built-in support for the array in the language itself. It has a special syntax to declare an array like int[], which is an array of primitive int types. You can create an array of both reference types and primitives. <br><br>
+      Each item of an array is an element. All the elements in an array must be of the same type. Thus, the array itself has a type that specifies what kind of elements it can contain. An int array can contain int values, for example, and a String array can contain strings.
+
+Written after the variable name, the index number is enclosed in brackets. So if the variable name is x, you could access a specific element with an expression like x[5].
+      </p>
+  </section>
+  
+  <section class="main-section" id="arraylists">
+    <header>
+      <h1>ArrayLists</h1>
+    </header>
+    <p>
+        The ArrayList class is an array-based implementation of the List interface. Specifically, all elements of an ArrayList are stored in a Java array.
+
+For example, an ArrayList named words has its underlying array of the size n. At this time, words are capable of storing at most n elements. We say the capacity of words is n elements. What will happen if we try to add n+1 elements to words? We will answer it after talking about common operations using ArrayList.
+      <br><br>
+      Quite often, you care about iterating the elements of a List without bothering their indexes. In this usage scenario, it is recommended to use Iterator. As an implementation of the List interface, the ArrayList class provides a method to create an Iterator useful for iterating all elements of it.
+
+Like the ArrayList class, the Iterator class uses generic programming. So, it is necessary to specify the type in the declaration. For example, the declaration for an Iterator over the words List of String: Iterator<String> iterator = words.iterator();
+      </p>
+  </section>
+  
+  <section class="main-section" id="linked-lists">
+    <header>
+      <h1>Linked Lists</h1>
+    </header>
+    <p>
+        Apart from the array, a linked list is another basic data structure in programming. Java provides a doubly-linked list implementation as java.util.LinkedList, this class can be used whenever a linked list data structure is needed. 
+
+Since LinkedList is part of the Collection framework, it implements Collection and Iterable interface as well, which allows iterating over them. 
+      <br><br>More info:  <br><br>
+      <ul>
+      <li>Since a LinkedList acts as a dynamic array and we do not have to specify the size while creating it, the size of the list automatically increases when we dynamically add and remove items. </li><li>And also, the elements are not stored in a continuous fashion. </li><li>Therefore, there is no need to increase the size. </li><li>Internally, the LinkedList is implemented using the doubly linked list data structure. </li><li>The main difference between a normal linked list and a doubly LinkedList is that a doubly linked list contains an extra pointer, typically called the previous pointer, together with the next pointer and data which are there in the singly linked list. </li>
+    </ul>
+      </p>
+  </section>
+  
+  <section class="main-section" id="queues">
+    <header>
+      <h1>Queues</h1>
+    </header>
+    <p>
+        The queue data structure is also available in the Java collection framework as an interface and few concrete implementations like ArrayBlockingQueue, LinkedList, and PriorityQueue. 
+
+Though you can also implement Queue by using LinkedList or array, it's much better to use existing classes, which are tried and tested. 
+<br><br>
+This not only reduces development time but also overall code quality and performance of your application. BlockingQueue is a thread-safe extension of the Queue interface and can be used to implement producer-consumer patterns in Java.
+   
+      </p>
+  </section>
+  
+  <section class="main-section" id="stacks">
+    <header>
+      <h1>Stacks</h1>
+    </header>
+    <p>
+        Java API also provides a Stack data structure implemented as java.util.Stack. This class extends the legacy Vector class for storing elements. Since the stack is a LIFO (Last In, First Out) data structure, it provides a push() method to insert objects and a pop() method to consume elements from the top. 
+<br><br>
+The stack is quite popular in different programming tasks like evaluating expressions. By the way, don’t confuse Stack data structure with stack memory, which is used to store local variable and method frames in Java.
+      </p>
+  </section>
+</main>
+
